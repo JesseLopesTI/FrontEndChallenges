@@ -32,6 +32,13 @@ input {
   font-size: 1.8rem;
 }
 
+input:focus {
+  background-image: url('../../icon/check-solid.svg');
+  background-repeat: no-repeat;
+  background-position: 290px 18px;
+  background-size: 15px;
+}
+
 ::placeholder {
   font-size: 1.5rem;
   color: var(--placeholder-font-color);
