@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 001 - Register</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/partials/login-page-style.css">
+    <link rel="stylesheet" href="./styles/partials/register-page-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <main>
+      <form>
+        <div class="secondary-form-container">
+          <div class="input-container">
+
+            <h2 class="secondary-title">Create your Account</h2>
+
+            <label for="company-name">Company Name</label>
+            <input type="text" id="company-name" name="company-name" placeholder="Your company name..." required>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name..." required>
+
+            <label for="email-adress">Email Address</label>
+            <input type="email" id="email-address" name="email-address" placeholder="Your email address..." required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Your password..." required>
+
+            <div class="checkbox-container">
+              <input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" required>
+
+              <label for="terms-and-conditions">
+                To register with us please tick to agree to our<br> <a class="terms-link" href="#">Terms and Conditions</a>.
+              </label>
+            </div>
+
+            <button class="button" name="register">
+              Register
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <p class="login-paragraph">
+        Already have an account? <a class="link" href="login-form.html">Sign In</a>
+      </p>
+    </main>
+   </body>
+
+</html>
