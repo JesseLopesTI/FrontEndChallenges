@@ -1,6 +1,6 @@
 .primary-form-container {
   width: 400px;
-  height: 380px;
+  height: 395px;
   margin: 0 auto;
   border-radius: 3px;
   background: var(--secondary-background-color);
@@ -15,21 +15,21 @@
 .main-title {
   text-align: center;
   font-weight: normal;
-  font-size: 2.5rem;
+  font-size: 24px;
   color: var(--primary-font-color);
-  padding: 3rem 0;
+  padding: 30px 0;
 }
 
 input {
   width: 94.3%;
-  height: 5rem;
-  margin: 1rem 0 2.5rem 0;
-  padding-left: 2rem;
+  height: 50px;
+  margin: 10px 0 25px 0;
+  padding-left: 18px;
   background: var(--white-color);
   border: none;
   border-radius: 3px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.8rem;
+  font-size: 14px;
 }
 
 input:focus {
@@ -40,12 +40,12 @@ input:focus {
 }
 
 ::placeholder {
-  font-size: 1.5rem;
+  font-size: 14px;
   color: var(--placeholder-font-color);
 }
 
 label {
-  font-size: 1.5rem;
+  font-size: 14px;
   text-align: left;
   color: var(--primary-font-color);
   font-weight: bold;
@@ -53,25 +53,25 @@ label {
 
 .button {
   width: 100%;
-  height: 5rem;
+  height: 50px;
   border: none;
   background: var(--primary-backgroung-color);
   font-family: 'Open Sans', sans-serif;
   border-radius: 3px;
   cursor: pointer;
   color: var(--white-color);
-  font-size: 1.8rem;
+  font-size: 16px;
 }
 
 .register-paragraph {
-  margin: 4rem 0 1rem 0;
+  margin: 40px 0 10px 0;
 }
 
 .paragraph,
 .register-paragraph,
 .login-paragraph {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 14px;
   font-weight: bold;
   color: var(--secondary-font-color);
 }
