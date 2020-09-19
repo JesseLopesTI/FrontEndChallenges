@@ -18,6 +18,10 @@ body {
   font-weight: normal;
 }
 
+.input {
+  margin-bottom: 15px;
+}
+
 .checkbox-container {
   display: flex;
   align-items: center;
