@@ -62,7 +62,6 @@ input[type=checkbox] {
 }
 
 .label-checkbox:after {
-  color: var(--primary-backgroung-color);
   content: url("../../icon/check-solid.svg");
   height: 10px;
   width: 10px;
