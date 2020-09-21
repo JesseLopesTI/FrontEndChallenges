@@ -26,7 +26,7 @@ input {
   margin: 10px 0 25px 0;
   padding-left: 18px;
   background: var(--white-color);
-  border: none;
+  border: 1px solid var(--input-border-color);
   border-radius: 3px;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
