@@ -51,6 +51,7 @@ input[type=checkbox] {
 .label-checkbox:before {
   content: '';
   background: var(--white-color);
+  border: 1px solid var(--input-border-color);
   border-radius: 5px;
   display: inline-block;
   width: 20px;
@@ -58,8 +59,6 @@ input[type=checkbox] {
   position: absolute;
   left: -30px;
   margin-top: 8px;
-
-
 }
 
 .label-checkbox:after {
@@ -70,8 +69,8 @@ input[type=checkbox] {
   border-radius: 5px;
   display: inline-block;
   position: absolute;
-  left: -24.5px;
-  top: 11.1px;
+  left: -23.9px;
+  top: 11.3px;
   transform: scale(0);
   transition: transform 0.2s linear;
 }
