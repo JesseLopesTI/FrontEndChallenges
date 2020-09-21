@@ -34,15 +34,57 @@ body {
 }
 
 input[type=checkbox] {
-  width: 20px;
+  display: none;
+}
+
+.checkbox-container {
+  width: 90%;
+  margin-left: 30px;
+}
+
+.label-checkbox {
+  position: relative;
+  margin: 20px 0;
+  margin-top: 20px;
+}
+
+.label-checkbox:before {
+  content: '';
+  background: var(--white-color);
   border-radius: 5px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -30px;
+  margin-top: 8px;
+
+
+}
+
+.label-checkbox:after {
+  color: var(--primary-backgroung-color);
+  content: url("../../icon/check-solid.svg");
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  position: absolute;
+  left: -24.5px;
+  top: 11.1px;
+  transform: scale(0);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label-checkbox:after {
+  transform: scale(1);
+}
+
+.terms-link {
+  color: var(--primary-backgroung-color);
 }
 
 .login-paragraph {
   margin-top: 40px;
   font-weight: bold;
-}
-
-.terms-link {
-  color: var(--primary-backgroung-color);
 }
