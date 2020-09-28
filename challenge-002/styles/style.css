@@ -1,0 +1,112 @@
+:root {
+  --white-color: #fff;
+  --primary-light-gray-color: #a0a0a0;
+  --primary-dark-gray-color: #606467;
+  --secondary-dark-gray-color: #333;
+  --black-color: #000;
+  --primary-dark-blue-color: #3b5999;
+  --secondary-dark-blue-color: #3b61b4;
+  --primary-dark-green-color: #15883d;
+  --secondary-dark-green-color: #1db954;
+
+  font-size: 60%;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.spotify-logo {
+  width: 13rem;
+  color: var(--black-color);
+}
+
+.line-one {
+  border-bottom: 1px solid var(--primary-light-gray-color);
+  margin-top: 1rem;
+}
+
+main,
+footer {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.buttons {
+  width: 90vw;
+  margin: 3rem auto;
+}
+
+.facebook-button,
+.apple-button,
+.phone-number-button {
+  width: 90vw;
+  height: 5rem;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.facebook-button {
+  background: var(--primary-dark-blue-color);
+  color: var(--white-color);
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+.apple-button {
+  background: var(--black-color);
+  color: var(--white-color);
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+.phone-number-button {
+  height: 6rem;
+  border: 2px solid var(--primary-dark-gray-color);
+  border-radius: 50px;
+  background: var(--white-color);
+  color: var(--primary-dark-gray-color);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.lines {
+  display: inline;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.line-two,
+.line-three {
+  width: 30%;
+  border: 1px solid var(--primary-light-gray-color);
+
+}
+
+.or {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
