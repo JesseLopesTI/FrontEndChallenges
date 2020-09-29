@@ -1,13 +1,14 @@
 :root {
   --white-color: #fff;
-  --primary-light-gray-color: #a0a0a0;
+  --primary-light-gray-color: #cac8c8; 
+  --secondary-light-gray-color: #969494;
   --primary-dark-gray-color: #606467;
   --secondary-dark-gray-color: #333;
   --black-color: #000;
   --primary-dark-blue-color: #3b5999;
   --secondary-dark-blue-color: #3b61b4;
   --primary-dark-green-color: #15883d;
-  --secondary-dark-green-color: #1db954;
+  --secondary-dark-green-color: #28d860;
 
   font-size: 60%;
 }
@@ -31,17 +32,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--primary-light-gray-color);
 }
 
 .spotify-logo {
   width: 13rem;
   color: var(--black-color);
-}
-
-.line-one {
-  border-bottom: 1px solid var(--primary-light-gray-color);
-  margin-top: 1rem;
 }
 
 main,
@@ -52,61 +49,232 @@ footer {
 
 .buttons {
   width: 90vw;
-  margin: 3rem auto;
+  margin: 0 auto;
+}
+
+.paragraph {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 3rem 0 1rem 0;
 }
 
 .facebook-button,
 .apple-button,
-.phone-number-button {
+.phone-number-button,
+.login-button,
+.sign-up-button {
   width: 90vw;
   height: 5rem;
   font-family: 'Inter', sans-serif;
   margin-bottom: 1rem;
   cursor: pointer;
+  border-radius: 50px;
+  text-transform: uppercase;
 }
 
 .facebook-button {
   background: var(--primary-dark-blue-color);
   color: var(--white-color);
   font-size: 1.7rem;
-  text-transform: uppercase;
-  border-radius: 50px;
+}
+
+.facebook-button:hover {
+  background: var(--secondary-dark-blue-color);
+  transition: .5s;
 }
 
 .apple-button {
   background: var(--black-color);
   color: var(--white-color);
   font-size: 1.7rem;
-  text-transform: uppercase;
-  border-radius: 50px;
+}
+
+.apple-button:hover {
+  background: var(--secondary-dark-gray-color);
+  transition: .5s;
 }
 
 .phone-number-button {
   height: 6rem;
   border: 2px solid var(--primary-dark-gray-color);
-  border-radius: 50px;
   background: var(--white-color);
   color: var(--primary-dark-gray-color);
   font-size: 1.5rem;
-  text-transform: uppercase;
   font-weight: 600;
+  margin-bottom: 1.8rem;
+}
+
+.phone-number-button:hover {
+  background: var(--primary-dark-gray-color);
+  color: var(--white-color);
+  transition: .3s;
 }
 
 .lines {
-  display: inline;
+  display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
 
-.line-two,
-.line-three {
-  width: 30%;
-  border: 1px solid var(--primary-light-gray-color);
-
+.line-one,
+.line-two {
+  width: 40%;
+  border-bottom: 1px solid var(--primary-light-gray-color);
 }
 
 .or {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.form-container {
+  width: 100%;
+  border-bottom: 1px solid var(--primary-light-gray-color);
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 96%;
+  height: 4rem;
+  border: 1px solid var(--primary-light-gray-color);
+  padding-left: 1rem;
+  margin: 1rem 0 2rem 0;
+  color: var(--black-color);
+  font-size: 1.5rem;
+}
+
+input:focus {
+  border: 1px solid var(--secondary-light-gray-color);
+}
+
+::placeholder {
+  color: var(--primary-dark-gray-color);
+  font-size: 1.5rem;
+  transition: .8s;
+}
+
+legend {
+  margin-bottom: 3rem;
+}
+
+.form-link {
+  font-size: 1.5rem;
+  color: var(--primary-dark-gray-color);
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.input-checkbox {
+  margin: 0;
+}
+
+input[type=checkbox] {
+  width: 2rem;
+  display: none;
+}
+
+.input[type=checkbox]:focus {
+  border: 1px solid var(--secondary-dark-green-color);
+  background: var(--secondary-dark-green-color);  
+}
+
+.checkbox-label {
+  position: relative;
+  font-size: 1.5rem;
+  color: var(--primary-dark-gray-color);
+  font-weight: normal;
+  margin-left: 3rem;
+  margin-bottom: 0; 
+}
+
+.checkbox-label:before {
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  background: var(--white-color);
+  border: 1px solid var(--secondary-light-gray-color);
+  border-radius: 5px;
+  display: inline-block;
+  position: absolute;
+  left: -3rem;
+}
+
+.checkbox-label:after {
+  content: url(../icon/check-solid.svg);
+  background-size: 1rem 1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  position: absolute;
+  left: -2.45rem;
+  top: 0.2rem;
+  transform: scale(0);
+  transition: transform 0.2s linear;
+}
+
+.input-checkbox:checked + .checkbox-label:after {
+  transform: scale(1);
+}
+
+.login-button {
+  background: var(--primary-dark-green-color);
+  color: var(--white-color);
+  font-size: 1.7rem;
+  margin: 2rem 0;
+}
+
+.login-button:hover {
+  background: var(--secondary-dark-green-color);
+  transition: .3s;
+}
+
+.sign-up-container {
+  border-bottom: 1px solid var(--primary-light-gray-color);
+}
+
+.sign-up-paragraph {
+  font-weight: bold;
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 3rem 0 2rem 0;
+}
+
+.sign-up-button {
+  height: 6rem;
+  border: 2px solid var(--primary-dark-gray-color);
+  background: var(--white-color);
+  color: var(--primary-dark-gray-color);
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.sign-up-button:hover {
+  background: var(--primary-dark-gray-color);
+  color: var(--white-color);
+  transition: .5s;
+
+}
+
+footer a {
+  color: var(--primary-dark-gray-color);
+}
+
+.footer-paragraph {
+  font-size: 1rem;
+  color: var(--primary-dark-gray-color);
+  text-align: center;
+  margin: 2rem 0;
+  line-height: 1.7rem;
 }
