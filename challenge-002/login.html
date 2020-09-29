@@ -59,9 +59,9 @@
             </legend>
 
             <div class="checkbox-container">
-              <input type="checkbox" id="checkbox" name="checkbox" selected required>
+              <input class="input-checkbox" type="checkbox" id="checkbox" name="checkbox" selected required>
 
-              <legend for="checkbox">Remember me</legend>
+              <label class="checkbox-label" for="checkbox">Remember me</label>
             </div>
 
             <button class="login-button">
@@ -73,11 +73,13 @@
         </fieldset>
 
         <fieldset>
-          <legend>Don't have an account?</legend>
+          <div class="sign-up-container">
+            <legend class="sign-up-paragraph">Don't have an account?</legend>
 
-          <button class="sign-up-button">
-            Sign Up for Spotify
-          </button>
+            <button class="sign-up-button">
+              Sign Up for Spotify
+            </button>
+          </div>
         </fieldset>
       </form>
     </main>
