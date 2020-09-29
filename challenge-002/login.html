@@ -20,6 +20,10 @@
 
     <main>
       <div class="buttons">
+        <p class="paragraph">
+          To continue, log in to Spotify.
+        </p>
+
         <button class="facebook-button">
           Continue with Facebook
         </button>
@@ -43,25 +47,27 @@
 
       <form>
         <fieldset>
-          <label for="email-or-username">Email address or username</label>
-          <input type="text" id="email-or-username" name="email-or-username" placeholder="Email address or username" required>
+          <div class="form-container">
+            <label for="email-or-username">Email address or username</label>
+            <input type="text" id="email-or-username" name="email-or-username" placeholder="Email address or username" required>
 
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Password" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
 
-          <legend>
-            <a href="">Forgot your password?</a>
-          </legend>
+            <legend>
+              <a class="form-link" href="">Forgot your password?</a>
+            </legend>
 
-          <input type="checkbox" id="checkbox" name="checkbox" selected required>
+            <input type="checkbox" id="checkbox" name="checkbox" selected required>
 
-          <legend for="checkbox">Remember me</legend>
+            <legend for="checkbox">Remember me</legend>
 
-          <button class="login-button">
-            Log In
-          </button>
+            <button class="login-button">
+              Log In
+            </button>
 
-          <div class="line-four"></div>
+            <div class="line-four"></div>
+          </div>
         </fieldset>
 
         <fieldset>
