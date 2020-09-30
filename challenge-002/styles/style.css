@@ -8,7 +8,8 @@
   --primary-dark-blue-color: #3b5999;
   --secondary-dark-blue-color: #3b61b4;
   --primary-dark-green-color: #15883d;
-  --secondary-dark-green-color: #28d860;
+  --secondary-dark-green-color: #1db954;
+  --light-green-color: #1fd662;
 
   font-size: 60%;
 }
@@ -20,6 +21,7 @@
   padding: 0;
   border: none;
   outline: none;
+  list-style: none;
 }
 
 body {
