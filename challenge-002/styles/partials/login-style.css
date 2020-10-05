@@ -31,6 +31,7 @@ footer {
 
 .facebook-button,
 .apple-button,
+.google-button,
 .phone-number-button,
 .login-button,
 .sign-up-button {
@@ -63,6 +64,21 @@ footer {
 .apple-button:hover {
   background: var(--secondary-dark-gray-color);
   transition: .5s;
+}
+
+.google-button {
+  height: 5rem;
+  border: 2px solid var(--primary-dark-gray-color);
+  background: var(--white-color);
+  color: var(--primary-dark-gray-color);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.google-button:hover {
+  background: var(--primary-dark-gray-color);
+  color: var(--white-color);
+  transition: .3s;
 }
 
 .phone-number-button {
@@ -216,20 +232,26 @@ input[type=checkbox] {
 }
 
 .sign-up-button {
-  height: 6rem;
+  width: 88.5vw;
+  height: 1.95rem;
   border: 2px solid var(--primary-dark-gray-color);
   background: var(--white-color);
-  color: var(--primary-dark-gray-color);
   font-size: 1.7rem;
   font-weight: 600;
   margin-bottom: 3rem;
+  text-align: center;
+  padding: 1.3rem 0;
 }
 
 .sign-up-button:hover {
   background: var(--primary-dark-gray-color);
   color: var(--white-color);
   transition: .5s;
+}
 
+.sign-up-link {
+  text-decoration: none;
+  color: var(--primary-dark-gray-color);
 }
 
 footer a {
