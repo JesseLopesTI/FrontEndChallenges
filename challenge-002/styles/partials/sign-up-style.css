@@ -1,0 +1,163 @@
+header,
+main,
+footer {
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo-container {
+  border-bottom: none;
+}
+
+.spotify-logo {
+  width: 9rem;
+  margin-top: 2.3rem;
+}
+
+.paragraph-container {
+  width: 75vw;
+}
+
+.header-paragraph {
+  font-size: 2.7rem;
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+  line-height: 3.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.buttons {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.facebook-button {
+  width: 85vw;
+  height: 5rem;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 2.5rem;
+  cursor: pointer;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+.facebook-button {
+  background: var(--primary-dark-blue-color);
+  color: var(--white-color);
+  font-size: 1.7rem;
+}
+
+.facebook-button:hover {
+  background: var(--secondary-dark-blue-color);
+  transition: .5s;
+}
+
+.lines {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 2.5rem;
+}
+
+.line-one,
+.line-two {
+  width: 30%;
+  border-bottom: 1px solid var(--primary-light-gray-color);
+}
+
+.or {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.form-container {
+  width: 100%;
+}
+
+.primary-form-legend {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 96%;
+  height: 4.8rem;
+  border: 1px solid var(--primary-light-gray-color);
+  border-radius: 3px;
+  padding-left: 1rem;
+  margin: 1rem 0 2rem 0;
+  color: var(--black-color);
+  font-size: 1.5rem;
+}
+
+input:focus {
+  border: 1px solid var(--secondary-light-gray-color);
+}
+
+::placeholder {
+  color: var(--primary-dark-gray-color);
+  font-size: 1.5rem;
+  transition: .8s;
+}
+
+.secondary-form-legend {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.birth-date-container {
+  display: inline-block;
+  align-items: center;
+  margin-top: 1rem;
+  border: 1px solid red;
+}
+
+.month-container,
+.day-container,
+.year-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.select-month {
+  width: 40%;
+  height: 4.8rem;
+  border: 1px solid var(--primary-light-gray-color);
+  border-radius: 3px;
+  padding-left: 1rem;
+  margin: 0 1rem 0 0;
+  color: var(--black-color);
+  font-size: 1.5rem;
+
+}
+
+.input-day,
+.input-year {
+  width: 18%;
+  height: 4.8rem;
+  border: 1px solid var(--primary-light-gray-color);
+  border-radius: 3px;
+  margin: 0;
+  color: var(--black-color);
+  font-size: 1.5rem;
+  text-align: center;
+  padding-left: 0;
+}
