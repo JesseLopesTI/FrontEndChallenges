@@ -1,4 +1,4 @@
-.logo-container {
+.logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,7 +47,7 @@ footer {
 .facebook-button {
   background: var(--primary-dark-blue-color);
   color: var(--white-color);
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 .facebook-button:hover {
@@ -58,7 +58,7 @@ footer {
 .apple-button {
   background: var(--black-color);
   color: var(--white-color);
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 .apple-button:hover {
@@ -71,7 +71,7 @@ footer {
   border: 2px solid var(--primary-dark-gray-color);
   background: var(--white-color);
   color: var(--primary-dark-gray-color);
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
@@ -116,7 +116,7 @@ footer {
   font-weight: 600;
 }
 
-.form-container {
+.form {
   width: 100%;
   border-bottom: 1px solid var(--primary-light-gray-color);
 }
@@ -211,7 +211,7 @@ input[type=checkbox] {
 .login-button {
   background: var(--primary-dark-green-color);
   color: var(--white-color);
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   margin: 2rem 0;
 }
 
@@ -232,26 +232,19 @@ input[type=checkbox] {
 }
 
 .sign-up-button {
-  width: 88.5vw;
-  height: 1.95rem;
+  height: 5rem;
   border: 2px solid var(--primary-dark-gray-color);
   background: var(--white-color);
-  font-size: 1.7rem;
+  color: var(--primary-dark-gray-color);
+  font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 3rem;
-  text-align: center;
-  padding: 1.3rem 0;
 }
 
 .sign-up-button:hover {
   background: var(--primary-dark-gray-color);
   color: var(--white-color);
-  transition: .5s;
-}
-
-.sign-up-link {
-  text-decoration: none;
-  color: var(--primary-dark-gray-color);
+  transition: .3s;
 }
 
 footer a {
