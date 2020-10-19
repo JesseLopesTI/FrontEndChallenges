@@ -6,14 +6,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Web Player: Music for Everyone</title>
+
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/partials/login-style.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <header>
-      <div class="logo-container">
+      <div class="logo">
         <a href=""><img class="spotify-logo" src="./images/black-spotify-logo.svg" alt="Spotify Logo"></a>
       </div>
     </header>
@@ -51,7 +53,7 @@
 
       <form>
         <fieldset>
-          <div class="form-container">
+          <div class="form">
             <label for="email-or-username">Email address or username</label>
             <input type="text" id="email-or-username" name="email-or-username" placeholder="Email address or username" required>
 
@@ -78,9 +80,11 @@
           <div class="sign-up-container">
             <legend class="sign-up-paragraph">Don't have an account?</legend>
 
-            <div class="sign-up-button">
-              <a class="sign-up-link" href="sign-up.html">
-                Sign Up for Spotify
+            <div class="sign-up">
+              <a href="sign-up.html">
+                <button class="sign-up-button" type="button">
+                  Sign Up for Spotify
+                </button>
               </a>
             </div>
           </div>
