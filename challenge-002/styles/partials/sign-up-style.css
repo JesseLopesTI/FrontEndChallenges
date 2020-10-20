@@ -52,7 +52,7 @@ footer {
 .facebook-button {
   background: var(--primary-dark-blue-color);
   color: var(--white-color);
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 .facebook-button:hover {
@@ -119,45 +119,201 @@ input:focus {
 
 .secondary-form-legend {
   font-size: 1.5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 .birth-date-container {
-  display: inline-block;
+  width: 100%;
+  display: flex;
   align-items: center;
-  margin-top: 1rem;
-  border: 1px solid red;
+  margin: 1rem 0 3rem 0;
 }
 
 .month-container,
+.day-container {
+  margin-right: 1.5rem;
+}
+
+.month-container {
+  width: 45%;
+}
+
+option[selected] {
+  color: var(--primary-light-gray-color);
+}
+
 .day-container,
 .year-container {
-  display: flex;
-  align-items: center;
-  border: 1px solid red;
+  width: 25%;
+}
+
+.select-month:focus,
+.input-day:focus,
+.input-year:focus {
+  color: var(--primary-dark-gray-color);
 }
 
 .select-month {
-  width: 40%;
+  width: 100%;
   height: 4.8rem;
   border: 1px solid var(--primary-light-gray-color);
   border-radius: 3px;
   padding-left: 1rem;
-  margin: 0 1rem 0 0;
-  color: var(--black-color);
+  margin: 1rem 1rem 0 0;
+  color: var(--primary-dark-gray-color);
   font-size: 1.5rem;
-
 }
 
 .input-day,
 .input-year {
-  width: 18%;
-  height: 4.8rem;
+  width: 100%;
+  height: 4.6rem;
   border: 1px solid var(--primary-light-gray-color);
   border-radius: 3px;
-  margin: 0;
+  margin: 1rem 1rem 0 0;
   color: var(--black-color);
   font-size: 1.5rem;
   text-align: center;
   padding-left: 0;
+}
+
+.gender-paragraph {
+  font-weight: bold;
+  font-size: 1.5rem;
+  /* margin-bottom: 1rem; */
+}
+
+.gender-option {
+  display: block;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: -0.5rem;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+}
+
+.non-binary-option {
+  display: flex;
+  align-items: center;
+  margin-top: -1.5rem;
+}
+
+input[type=radio] {
+  width: 1.8rem;
+  margin: 0;
+}
+
+.label-male,
+.label-female,
+.label-non-binary {
+  margin: 0 0 0 1rem;
+}
+
+.label-male {
+  margin-right: 3.5rem;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.input-checkbox {
+  margin: 0;
+}
+
+input[type=checkbox] {
+  width: 2rem;
+  display: none;
+}
+
+.checkbox-label {
+  position: relative;
+  font-size: 1.5rem;
+  color: var(--primary-dark-gray-color);
+  font-weight: normal;
+  margin-left: 3rem;
+  margin-bottom: 0; 
+}
+
+.checkbox-label:before {
+  content: '';
+  width: 1.8rem;
+  height: 1.8rem;
+  background: var(--white-color);
+  border: 1px solid var(--secondary-light-gray-color);
+  border-radius: 5px;
+  display: inline-block;
+  position: absolute;
+  left: -3rem;
+}
+
+.checkbox-label:after {
+  content: url(../../icon/check-solid.svg);
+  background-size: 1rem 1rem;
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: -2.5rem;
+  top: 0rem;
+  transform: scale(0);
+  transition: transform 0.2s linear;
+}
+
+.input-checkbox:checked + .checkbox-label:after {
+  transform: scale(1);
+}
+
+.checkbox-label {
+  font-weight: normal;
+  text-align: left;
+}
+
+.terms {
+  margin-bottom: 2rem
+}
+
+.terms-and-conditions {
+  margin-bottom: 1rem;
+}
+
+.terms {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.link {
+  color: var(--secondary-dark-green-color);
+}
+
+.link:hover {
+  color: var(--light-green-color);
+}
+
+.sign-up-button {
+  width: 86vw;
+  height: 5rem;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  border-radius: 50px;
+  text-transform: uppercase;
+  background: var(--primary-dark-green-color);
+  color: var(--white-color);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.sign-up-button:hover {
+  background: var(--secondary-dark-green-color);
+  transition: .3s;
+}
+
+.legend-log-in {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
 }
