@@ -11,6 +11,16 @@
   color: var(--black-color);
 }
 
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .container {
+  width: 440px;
+} */
+
 main,
 footer {
   width: 90vw;
@@ -67,7 +77,6 @@ footer {
 }
 
 .google-button {
-  height: 5rem;
   border: 2px solid var(--primary-dark-gray-color);
   background: var(--white-color);
   color: var(--primary-dark-gray-color);
@@ -82,11 +91,10 @@ footer {
 }
 
 .phone-number-button {
-  height: 6rem;
   border: 2px solid var(--primary-dark-gray-color);
   background: var(--white-color);
   color: var(--primary-dark-gray-color);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 1.8rem;
 }
@@ -201,7 +209,17 @@ input[type=checkbox] {
   left: -2.45rem;
   top: 0.2rem;
   transform: scale(0);
-  transition: transform 0.2s linear;
+}
+
+.checkbox-label:after {
+  width: 2.1rem;
+  height: 2.1rem;
+  background: var(--primary-dark-green-color);
+  border-radius: 4px;
+  display: inline-block;
+  position: absolute;
+  left: -2.95rem;
+  top: 0rem;
 }
 
 .input-checkbox:checked + .checkbox-label:after {
@@ -257,4 +275,41 @@ footer a {
   text-align: center;
   margin: 2rem 0;
   line-height: 1.7rem;
+}
+
+@media (min-width: 480px) {
+  .paragraph,
+  .container,
+  .buttons {
+    width: 440px;
+  }
+
+  .facebook-button,
+  .apple-button,
+  .google-button,
+  .phone-number-button,
+  .login-button,
+  .sign-up-button {
+    width: 432px;
+  }
+}
+
+@media (min-width: 769px) {
+  .logo {
+    padding: 25px 0;
+  }
+
+  .spotify-logo {
+    width: 200px;
+  }
+
+  .login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .login-button {
+    width: 200px;
+  } 
 }
