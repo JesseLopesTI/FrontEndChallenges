@@ -21,75 +21,80 @@
     </header>
 
     <main>
-      <div class="buttons">
-        <p class="paragraph">
-          To continue, log in to Spotify.
-        </p>
+      <div class="container">
+        <div class="buttons">
+          <p class="paragraph">
+            To continue, log in to Spotify.
+          </p>
 
-        <button class="facebook-button">
-          Continue with Facebook
-        </button>
+          <button type="button" class="facebook-button">
+            Continue with Facebook
+          </button>
 
-        <button class="apple-button">
-          Continue with Apple
-        </button>
+          <button type="button" class="apple-button">
+            Continue with Apple
+          </button>
 
-        <button class="google-button">
-          Continue with Google
-        </button>
+          <button type="button" class="google-button">
+            Continue with Google
+          </button>
 
-        <button class="phone-number-button">
-          Continue with Phone<br> Number
-        </button>
-      </div>
+          <button type="button" class="phone-number-button">
+            Continue with Phone Number
+          </button>
+        </div>
 
-      <div class="lines">
-        <div class="line-one"></div>
+        <div class="lines">
+          <div class="line-one"></div>
 
-        <p class="or">Or</p>
+          <p class="or">Or</p>
 
-        <div class="line-two"></div>
-      </div>
+          <div class="line-two"></div>
+        </div>
 
-      <form>
-        <fieldset>
-          <div class="form">
-            <label for="email-or-username">Email address or username</label>
-            <input type="text" id="email-or-username" name="email-or-username" placeholder="Email address or username" required>
+        <form>
+          <fieldset>
+            <div class="form">
+              <label for="email-or-username">Email address or username</label>
+              <input type="text" id="email-or-username" name="email-or-username" placeholder="Email address or username" required>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Password" required>
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Password" required>
 
-            <legend>
-              <a class="form-link" href="recover-password.html">Forgot your password?</a>
-            </legend>
+              <legend>
+                <a class="form-link" href="recover-password.html">Forgot your password?</a>
+              </legend>
 
-            <div class="checkbox-container">
-              <input class="input-checkbox" type="checkbox" id="checkbox" name="checkbox" checked required>
+              <div class="login">
+                <div class="checkbox-container">
+                  <input class="input-checkbox" type="checkbox" id="checkbox" name="checkbox" checked required>
+                  <label class="checkbox-label" for="checkbox">Remember me</label>
+                </div>
 
-              <label class="checkbox-label" for="checkbox">Remember me</label>
+                <div class="button">
+                  <button class="login-button">
+                    Log In
+                  </button>
+                </div>
+              </div>
             </div>
+          </fieldset>
 
-            <button class="login-button">
-              Log In
-            </button>
-          </div>
-        </fieldset>
+          <fieldset>
+            <div class="sign-up-container">
+              <legend class="sign-up-paragraph">Don't have an account?</legend>
 
-        <fieldset>
-          <div class="sign-up-container">
-            <legend class="sign-up-paragraph">Don't have an account?</legend>
-
-            <div class="sign-up">
-              <a href="sign-up.html">
-                <button class="sign-up-button" type="button">
-                  Sign Up for Spotify
-                </button>
-              </a>
+              <div class="sign-up">
+                <a href="sign-up.html">
+                  <button class="sign-up-button" type="button">
+                    Sign Up for Spotify
+                  </button>
+                </a>
+              </div>
             </div>
-          </div>
-        </fieldset>
-      </form>
+          </fieldset>
+        </form>
+      </div>
     </main>
   </body>
 
