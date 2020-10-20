@@ -30,8 +30,8 @@ footer {
   margin-top: 2.5rem;
   margin-bottom: 3rem;
   line-height: 3.5rem;
-  text-align: center;
   font-weight: bold;
+  text-align: center;
 }
 
 .buttons {
@@ -87,6 +87,7 @@ footer {
   font-weight: bold;
   font-size: 1.8rem;
   margin-bottom: 2.5rem;
+  text-align: center;
 }
 
 label {
@@ -180,12 +181,9 @@ option[selected] {
 .gender-paragraph {
   font-weight: bold;
   font-size: 1.5rem;
-  /* margin-bottom: 1rem; */
 }
 
 .gender-option {
-  display: block;
-  align-items: center;
   margin-bottom: 2rem;
   margin-top: -0.5rem;
 }
@@ -193,12 +191,6 @@ option[selected] {
 .options {
   display: flex;
   align-items: center;
-}
-
-.non-binary-option {
-  display: flex;
-  align-items: center;
-  margin-top: -1.5rem;
 }
 
 input[type=radio] {
@@ -212,13 +204,13 @@ input[type=radio] {
   margin: 0 0 0 1rem;
 }
 
-.label-male {
-  margin-right: 3.5rem;
+.label-male,
+.label-female {
+  margin-right: 4.5rem;
 }
 
 .checkbox-container {
-  display: flex;
-  align-items: center;
+  display: grid;
   margin-bottom: 2rem;
 }
 
@@ -255,13 +247,23 @@ input[type=checkbox] {
 .checkbox-label:after {
   content: url(../../icon/check-solid.svg);
   background-size: 1rem 1rem;
-  width: 1rem;
-  height: 1rem;
+  width: 1.1rem;
+  height: 1.1rem;
   position: absolute;
-  left: -2.5rem;
-  top: 0rem;
+  left: -2.45rem;
+  top: 0.2rem;
   transform: scale(0);
-  transition: transform 0.2s linear;
+}
+
+.checkbox-label:after {
+  width: 1.95rem;
+  height: 1.95rem;
+  background: var(--primary-dark-green-color);
+  border-radius: 4px;
+  display: inline-block;
+  position: absolute;
+  left: -2.99rem;
+  top: 0.08rem;
 }
 
 .input-checkbox:checked + .checkbox-label:after {
@@ -316,4 +318,38 @@ input[type=checkbox] {
   font-size: 1.5rem;
   margin-bottom: 3rem;
   text-align: center;
+}
+
+@media (min-width: 450px) {
+  header,
+  main,
+  footer,
+  .form-container {
+    width: 440px;
+  }
+
+  .facebook-button,
+  .sign-up-button,
+  input {
+    width: 440px;
+  }
+
+  input {
+    width: 428px;
+  }
+
+  .birth-date-container {
+    width: 440px;
+    margin: 1rem 0 2rem 0;
+  }
+}
+
+@media (min-width: 990px) {
+  .logo-container {
+    padding: 25px 0;
+  }
+
+  .spotify-logo {
+    width: 130px;
+  }
 }
