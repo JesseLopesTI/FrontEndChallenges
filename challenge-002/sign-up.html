@@ -14,138 +14,138 @@
   </head>
 
   <body>
-    <header>
-      <div class="header-container">
-        <div class="logo-container">
-          <a href=""><img class="spotify-logo" src="./images/black-spotify-logo.svg" alt="Spotify Logo"></a>
+    <div class="container">
+      <header>
+        <div class="header-container">
+          <div class="logo-container">
+            <a href=""><img class="spotify-logo" src="./images/black-spotify-logo.svg" alt="Spotify Logo"></a>
+          </div>
+
+          <div class="paragraph-container">
+            <p class="header-paragraph">
+              Sign up for free to start listening.
+            </p>
+          </div>
+
+          <div class="button-container">
+            <button class="facebook-button">
+              Sign up with Facebook
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="lines">
+          <div class="line-one"></div>
+
+          <p class="or">Or</p>
+
+          <div class="line-two"></div>
         </div>
 
-        <div class="paragraph-container">
-          <p class="header-paragraph">
-            Sign up for free to start listening.
-          </p>
-        </div>
-
-        <div class="button-container">
-          <button class="facebook-button">
-            Sign up with Facebook
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <div class="lines">
-        <div class="line-one"></div>
-
-        <p class="or">Or</p>
-
-        <div class="line-two"></div>
-      </div>
-
-      <form>
-        <fieldset>
-          <legend class="primary-form-legend">
-            Sign up with your email address
-          </legend>
-
-          <div class="form-container">
-            <label for="email">what's your email?</label>
-            <input type="text" id="email" name="email" placeholder="Enter your email." required>
-
-            <label for="confirm-email">Confirm your email</label>
-            <input type="email" id="confirm-email" name="confirm-email" placeholder="Enter your email again." required>
-
-            <label for="password">Create a password</label>
-            <input type="password" id="password" name="password" placeholder="Create a password." required>
-
-            <label for="name">What should we call you?</label>
-            <input type="text" id="name" name="name" placeholder="Enter a profile name." required>
-
-            <legend class="secondary-form-legend">
-              This appears on your profile.
+        <form>
+          <fieldset>
+            <legend class="primary-form-legend">
+              Sign up with your email address
             </legend>
-          </div>
-        </fieldset>
 
-        <fieldset>
-          <label class="birth-paragraph" for="birth-date">What's your date of birth?</label>
+            <div class="form-container">
+              <label for="email">what's your email?</label>
+              <input type="text" id="email" name="email" placeholder="Enter your email." required>
 
-          <div class="birth-date-container">
-            <div class="month-container">
-              <label for="month">Month</label>
+              <label for="confirm-email">Confirm your email</label>
+              <input type="email" id="confirm-email" name="confirm-email" placeholder="Enter your email again." required>
 
-              <select class="select-month" id="month" name="month">
-                <option selected disabled>Month</option>
-                <option>January</option>
-                <option>February</option>
-                <option>March</option>
-                <option>April</option>
-                <option>May</option>
-                <option>June</option>
-                <option>July</option>
-                <option>August</option>
-                <option>September</option>
-                <option>October</option>
-                <option>November</option>
-                <option>December</option>
-              </select>
+              <label for="password">Create a password</label>
+              <input type="password" id="password" name="password" placeholder="Create a password." required>
+
+              <label for="name">What should we call you?</label>
+              <input type="text" id="name" name="name" placeholder="Enter a profile name." required>
+
+              <legend class="secondary-form-legend">
+                This appears on your profile.
+              </legend>
             </div>
+          </fieldset>
 
-            <div class="day-container">
-              <label for="day">Day</label>
-              <input class="input-day" type="number" id="day" name="day" placeholder="DD" required>
+          <fieldset>
+            <label class="birth-paragraph" for="birth-date">What's your date of birth?</label>
+
+            <div class="birth-date-container">
+              <div class="month-container">
+                <label for="month">Month</label>
+
+                <select class="select-month" id="month" name="month">
+                  <option selected disabled>Month</option>
+                  <option>January</option>
+                  <option>February</option>
+                  <option>March</option>
+                  <option>April</option>
+                  <option>May</option>
+                  <option>June</option>
+                  <option>July</option>
+                  <option>August</option>
+                  <option>September</option>
+                  <option>October</option>
+                  <option>November</option>
+                  <option>December</option>
+                </select>
+              </div>
+
+              <div class="day-container">
+                <label for="day">Day</label>
+                <input class="input-day" type="number" id="day" name="day" placeholder="DD" required>
+              </div>
+
+              <div class="year-container">
+                <label for="year">Year</label>
+                <input class="input-year" type="number" id="year" name="year" placeholder="YYYY" required>
+              </div>
             </div>
+          </fieldset>
 
-            <div class="year-container">
-              <label for="year">Year</label>
-              <input class="input-year" type="number" id="year" name="year" placeholder="YYYY" required>
+          <fieldset>
+            <Legend class="gender-paragraph">What's your gender?</Legend>
+
+            <div class="gender-option">
+              <div class="options">
+                <input class="input-male" type="radio" id="male" name="gender-options">
+                <label class="label-male" for="male">Male</label>
+
+                <input class="input-famale" type="radio" id="female" name="gender-options">
+                <label class="label-female" for="female">Female</label>
+
+                <input class="input-non-binary" type="radio" id="non-binary" name="gender-options">
+                <label class="label-non-binary" for="non-binary">Non-binary</label>
+              </div>
             </div>
-          </div>
-        </fieldset>
+          </fieldset>
 
-        <fieldset>
-          <Legend class="gender-paragraph">What's your gender?</Legend>
+          <fieldset class="checkbox-container">
+            <input class="input-checkbox" type="checkbox" id="checkbox" name="checkbox" checked required>
+            <label class="checkbox-label" for="checkbox">Share my registration data with Spotify's content provides for marketing purposes.</label>
+          </fieldset>
 
-          <div class="gender-option">
-            <div class="options">
-              <input class="input-male" type="radio" id="male" name="gender-options">
-              <label class="label-male" for="male">Male</label>
+          <fieldset class="terms">
+            <legend class="terms-and-conditions">
+              By clicking on Sign up, you agree to Spotify's <a class="link" href="https://www.spotify.com/us/legal/end-user-agreement/" target="_blank">Terms and Conditions of Use</a>.
+            </legend>
 
-              <input class="input-famale" type="radio" id="female" name="gender-options">
-              <label class="label-female" for="female">Female</label>
-            </div>
+            <legend class="policy">
+              To learn more about how Spotify collects, uses, shares and protects your personal data please read spotidy's <a class="link" href="https://www.spotify.com/us/legal/privacy-policy/" target="_blank">Privacy Policy</a>.
+            </legend>
+          </fieldset>
 
-            <div class="non-binary-option">
-              <input class="input-non-binary" type="radio" id="non-binary" name="gender-options">
-              <label class="label-non-binary" for="non-binary">Non-binary</label>
-            </div>
-          </div>
-        </fieldset>
+          <button class="sign-up-button">
+            Sign Up
+          </button>
 
-        <fieldset class="checkbox-container">
-          <input class="input-checkbox" type="checkbox" id="checkbox" name="checkbox" checked required>
-          <label class="checkbox-label" for="checkbox">Share my registration data with Spotify's content provides for marketing purposes.</label>
-        </fieldset>
-
-        <fieldset class="terms">
-          <legend class="terms-and-conditions">
-            By clicking on Sign up, you agree to Spotify's <a class="link" href="https://www.spotify.com/us/legal/end-user-agreement/">Terms and Conditions of Use</a>.
+          <legend class="legend-log-in">
+            Have an account? <a class="link" href="login.html">Log in</a>.
           </legend>
-
-          <legend class="policy">
-            To learn more about how Spotify collects, uses, shares and protects your personal data please read spotidy's <a class="link" href="https://www.spotify.com/us/legal/privacy-policy/">Privacy Policy</a>.
-          </legend>
-        </fieldset>
-
-        <button class="sign-up-button">
-          Sign Up
-        </button>
-
-        <legend class="legend-log-in">
-          Have an account? <a class="link" href="login.html">Log in</a>.
-        </legend>
-      </form>
+        </form>
+      </div>
     </main>
   </body>
 
