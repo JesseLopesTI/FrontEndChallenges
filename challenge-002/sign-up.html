@@ -6,8 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up - Spotify</title>
+
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/partials/sign-up-style.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   </head>
 
@@ -67,7 +69,7 @@
         </fieldset>
 
         <fieldset>
-          <label for="birth-date">What's your date of birth?</label>
+          <label class="birth-paragraph" for="birth-date">What's your date of birth?</label>
 
           <div class="birth-date-container">
             <div class="month-container">
@@ -101,6 +103,48 @@
             </div>
           </div>
         </fieldset>
+
+        <fieldset>
+          <Legend class="gender-paragraph">What's your gender?</Legend>
+
+          <div class="gender-option">
+            <div class="options">
+              <input class="input-male" type="radio" id="male" name="gender-options">
+              <label class="label-male" for="male">Male</label>
+
+              <input class="input-famale" type="radio" id="female" name="gender-options">
+              <label class="label-female" for="female">Female</label>
+            </div>
+
+            <div class="non-binary-option">
+              <input class="input-non-binary" type="radio" id="non-binary" name="gender-options">
+              <label class="label-non-binary" for="non-binary">Non-binary</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="checkbox-container">
+          <input class="input-checkbox" type="checkbox" id="checkbox" name="checkbox" checked required>
+          <label class="checkbox-label" for="checkbox">Share my registration data with Spotify's content provides for marketing purposes.</label>
+        </fieldset>
+
+        <fieldset class="terms">
+          <legend class="terms-and-conditions">
+            By clicking on Sign up, you agree to Spotify's <a class="link" href="https://www.spotify.com/us/legal/end-user-agreement/">Terms and Conditions of Use</a>.
+          </legend>
+
+          <legend class="policy">
+            To learn more about how Spotify collects, uses, shares and protects your personal data please read spotidy's <a class="link" href="https://www.spotify.com/us/legal/privacy-policy/">Privacy Policy</a>.
+          </legend>
+        </fieldset>
+
+        <button class="sign-up-button">
+          Sign Up
+        </button>
+
+        <legend class="legend-log-in">
+          Have an account? <a class="link" href="login.html">Log in</a>.
+        </legend>
       </form>
     </main>
   </body>
