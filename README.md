@@ -20,7 +20,7 @@ Recriar o modelo [Minimal Login and Register Forms](https://dribbble.com/shots/1
 
 Recriar a página de login e cadastro do [Spotify](https://www.spotify.com/).
 
-**Solução (em andamento):** [challenge-002](https://github.com/JesseLopesTI/FrontEndChallenges/tree/master/challenge-002)
+**Solução:** [challenge-002](https://github.com/JesseLopesTI/FrontEndChallenges/tree/master/challenge-002)
 
 **#3 Website Ludwig Favre**
 
