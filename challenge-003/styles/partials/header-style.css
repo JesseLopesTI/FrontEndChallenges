@@ -58,3 +58,8 @@ li a {
 .fab:hover {
   color: var(--white-color);
 }
+
+.fas {
+  font-size: 2.7rem;
+  color: var(--white-color);
+}
