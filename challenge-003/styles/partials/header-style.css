@@ -1,0 +1,60 @@
+.menu {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 0;
+}
+
+.navigation-items {
+  display: none;
+}
+
+ul li {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+li a {
+  color: var(--white-color);
+}
+
+.work {
+  margin-bottom: 4.3rem !important;
+}
+
+.inactive-item {
+  color: var(--gray-color);
+  transition: .5s;
+}
+
+.inactive-item:hover {
+  color: var(--white-color);
+}
+
+.main-title {
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  color: var(--white-color);
+  margin-right: 9.5rem;
+}
+
+.logos {
+  display: none;
+}
+
+.fab {
+  font-size: 3rem;
+  /* margin-left: 1.5rem; */
+  color: var(--gray-color);
+  transition: .5s;
+}
+
+.fab:hover {
+  color: var(--white-color);
+}

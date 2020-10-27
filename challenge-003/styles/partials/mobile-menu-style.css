@@ -1,0 +1,38 @@
+.list-items {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5rem 0;
+}
+
+.navigation-list {
+  margin: 12rem 0;
+}
+
+.navigation-list a {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fas {
+  font-size: 2.7rem;
+  color: var(--white-color);
+}
+
+.fa-times {
+  font-size: 3.1rem;
+}
+
+.menu-list-logos {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 5rem;
+}
