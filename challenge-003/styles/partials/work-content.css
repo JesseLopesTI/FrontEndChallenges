@@ -1,0 +1,75 @@
+.grid-layout {
+  Width: 100vw;
+  margin: 0 auto;
+}
+
+.image-legend {
+  width: 100%;
+  height: 30rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.legend {
+  opacity: 0;
+  width: 100%;
+  height: 30rem;
+  background: linear-gradient(rgba(0, 0, 0, .80), rgba(0, 0, 0, .80) 100%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+}
+
+.legend:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.publication-year {
+  font-size: 15px;
+  color: var(--gray-color);
+}
+
+.photograph {
+  width: 100%;
+  height: 30rem;
+  display: block;
+}
+
+.last-image {
+  margin: 0;
+}
+
+@media (min-width: 601px) {
+  .grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem
+  }
+
+  .legend {
+    opacity: 0;
+    width: 100%;
+    height: 30rem;
+  }
+}
+
+@media screen and (min-width: 829px) {
+  .grid-layout {
+    Width: 85%;
+    margin: 0 auto;
+  }
+
+  .photograph {
+    width: 100%;
+    height: 30rem;
+    display: block;
+  }
+}
