@@ -1,5 +1,5 @@
 .menu {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -50,7 +50,6 @@ li a {
 
 .fab {
   font-size: 3rem;
-  /* margin-left: 1.5rem; */
   color: var(--gray-color);
   transition: .5s;
 }
@@ -62,4 +61,49 @@ li a {
 .fas {
   font-size: 2.7rem;
   color: var(--white-color);
+}
+
+@media screen and (min-width: 829px) {
+  :root {
+    font-size: 55%;
+  }
+
+  .menu {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navigation-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  ul li {
+    font-size: 2rem;
+    display: inline;
+  }
+
+  .work {
+    margin-right: 2rem;
+  }
+
+  .main-title {
+    margin-right: 9rem;
+  }
+  
+  .logos {
+    display: inline;
+  }
+
+  .fab {
+    font-size: 2.2rem;
+    margin-left: 2rem;
+  }
+
+  .bars {
+    display: none !important;
+  }
 }
