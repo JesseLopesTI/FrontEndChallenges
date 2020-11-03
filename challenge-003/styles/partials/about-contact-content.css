@@ -19,7 +19,7 @@
   margin: 0 auto;
 }
 
-.about-paragraph {
+.video-legend {
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 700;
@@ -40,6 +40,14 @@
   color: var(--white-color);
   text-align: center;
   margin-bottom: 1.5rem;
+}
+
+.about-paragraph {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 2.5rem;
 }
 
 fieldset {
@@ -100,4 +108,42 @@ textarea {
 
 .button:hover {
   background: var(--gray-color);
+}
+
+@media screen and (min-width: 601px) {
+  .content {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .text {
+    width: 85%;
+    margin: 0 auto;
+    padding: 5rem 2rem 0 0;
+    vertical-align: top;
+  }
+
+  .subtitle,
+  .about-paragraph {
+    text-align: left;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  fieldset {
+    width: 95%;
+    margin: 5rem 0 0 2rem;
+    border: none;
+  }
+}
+
+@media screen and (min-width: 829px) {
+  :root {
+    font-size: 55%;
+  }
 }
