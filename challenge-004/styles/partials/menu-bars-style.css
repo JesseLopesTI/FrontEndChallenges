@@ -1,0 +1,45 @@
+.menu-list {
+  height: 79.3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-list a {
+  color: var(--light-grey-color);
+}
+
+.menu-list a:hover {
+  color: var(--dark-grey-color);
+}
+
+.menu-list ul li {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.menu-list .active-item {
+  color: var(--dark-grey-color);
+}
+
+.bar-menu-footer {
+  border-top: 1px solid var(--light-grey-color);
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-instagram {
+  font-size: 3rem;
+  color: var(--light-grey-color);
+}
+
+.fa-instagram:hover {
+  color: var(--pink-color);
+  cursor: pointer;
+  transition: .5s;
+}
