@@ -1,6 +1,6 @@
 # FrontEndChallenges
 
-Repositório de estudos de **Front-End**, com desafios já solucionados
+Repositório de estudos de **Front-End**, com desafios já solucionados.
 
 **Tecnologias:**
 
@@ -27,3 +27,9 @@ Recriar a página de login e cadastro do [Spotify](https://www.spotify.com/).
 Recriar as páginas Work e About & Contact, do tema [Ludwig Favre](https://portfolio.adobe.com/start), do website [Adobe Portfolio](https://portfolio.adobe.com/).
 
 **Solução:** [challenge-003](https://github.com/JesseLopesTI/FrontEndChallenges/tree/master/challenge-003)
+
+**#4 Website Andrzej Szeib**
+
+Recriar as páginas Portfolio e Contact, do website [Andrzej Szeib](https://andrzej-szeib.myportfolio.com/projects), [Adobe Portfolio](https://portfolio.adobe.com/).
+
+**Solução:** [challenge-004](https://github.com/JesseLopesTI/FrontEndChallenges/tree/master/challenge-004)
