@@ -1,0 +1,70 @@
+.header {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 0 3rem 0;
+}
+
+.authors-name {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: var(--dark-grey-color);
+}
+
+.navigation nav {
+  display: none;
+}
+
+.fa-bars {
+  font-size: 1.8rem;
+  color: var(--dark-grey-color);
+}
+
+@media screen and (min-width: 769px) {
+  :root {
+    font-size: 70%;
+  }
+
+  .open-menu {
+    display: none;
+  }
+
+  .navigation nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navigation-menu ul li {
+    display: inline;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  
+  .navigation-menu a {
+    color: var(--light-grey-color);
+    font-size: 2rem;
+  }
+  
+  .navigation-menu a:hover {
+    color: var(--dark-grey-color);
+  }
+  
+  a.active-item {
+    color: var(--dark-grey-color);
+  }
+  
+  .fa-instagram {
+    font-size: 2.5rem !important;
+    margin-left: 2rem;
+    color: var(--light-grey-color);
+  }
+
+  .fa-instagram:hover {
+    font-size: 2.5rem !important;
+    margin-left: 2rem;
+    color: var(--pink-color);
+  }
+}
