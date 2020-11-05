@@ -1,0 +1,24 @@
+:root {
+  --white-color: #fff;
+  --light-grey-color: #dbdbdb;
+  --dark-grey-color: #131313;
+  --pink-color: #993399;
+
+  font-size: 60%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
