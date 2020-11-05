@@ -1,3 +1,12 @@
+.close-menu {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 3rem;
+}
+
 .menu-list {
   height: 79.3vh;
   display: flex;
@@ -31,6 +40,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.fa-times {
+  font-size: 2rem;
+  color: var(--dark-grey-color);
 }
 
 .fa-instagram {
