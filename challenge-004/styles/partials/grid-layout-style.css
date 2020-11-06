@@ -3,8 +3,13 @@ main {
   height: 100vh;
 }
 
+.grid-layout {
+  width: 100%;
+  height: 100%;
+}
+
 .image-container {
-  width: 100vw;
+  width: 100%;
   margin-bottom: 1rem;
   position: relative;
 }
@@ -46,7 +51,7 @@ main {
 
 @media screen and (min-width: 769px) {
   main {
-    width: 98vw;
+    width: 99vw;
     margin: 0 auto;
   }
 }
